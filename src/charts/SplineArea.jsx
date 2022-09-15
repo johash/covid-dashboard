@@ -1,6 +1,5 @@
 import React from "react";
 import ReactApexChart from "react-apexcharts";
-import moment from "moment";
 import { useSelector } from "react-redux";
 
 const SplineArea = () => {
@@ -17,9 +16,6 @@ const SplineArea = () => {
     });
     dates = Object.keys(data.deaths);
   }
-
-  let days = moment().subtract(30, "days");
-  console.log(days);
 
   const chartConfig = {
     series: [
